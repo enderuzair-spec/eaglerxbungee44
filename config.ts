@@ -3,16 +3,17 @@ import { Config } from "./types.js";
 export const config: Config = {
     name: "BasedProxy",
     bindHost: "0.0.0.0",
-    bindPort: 80, // 443 if using TLS
+    bindPort: 8080, // 443 if using TLS
     maxPlayers: 20,
+    authType: "OFFLINE",
     motd: {
         iconURL: null,
         l1: "hi",
         l2: "lol"
     },
     server: {
-        host: "locahost",
-        port: 25565
+        host: "lilrayray.aternos.me",
+        port: 40070
     },
     security: { // provide path to key & cert if you want to enable encryption/secure websockets
         enabled: false,
